@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Equipment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:Poppins; margin:0; background:#fafafa; }
+header { background:#3e2723; padding:15px; color:white; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+.card { background:white; border-radius:10px; overflow:hidden; }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card div { padding:15px; }
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<h2 style="text-align:center;">Brewing Equipment</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Rich, full-bodied coffee">
+    <div>
+      <h3>French Press</h3>
+      <p>Rich, full-bodied coffee</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1587731556938-38755b4803a6" alt="Professional brewing">
+    <div>
+      <h3>Espresso Machine</h3>
+      <p>Professional brewing</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Events</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:Poppins; margin:0; background:#fafafa; }
+header { background:#3e2723; padding:15px; color:white; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+.card { max-width:600px; margin:40px auto; background:white; border-radius:10px; overflow:hidden; }
+.card img { width:100%; height:300px; object-fit:cover; }
+.card div { padding:20px; text-align:center; }
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="Learn tasting techniques & meet roasters">
+  <div>
+    <h3>Coffee Tasting Workshop</h3>
+    <p>Learn tasting techniques & meet roasters</p>
+    <button>Register</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bean Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f5f2;
+    }
+
+    header {
+      background: #3e2723;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav a:hover::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #ffcc80;
+      bottom: -5px;
+      left: 0;
+    }
+
+    .hero {
+      height: 70vh;
+      background: url("file:///C:/Users/us/Downloads/coffee-beans-ground-coffee-sccc-blog-2.webp") center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    button {
+      background: #6d4c41;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    footer {
+      background: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Slideshow */
+    .slideshow {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .slideshow img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>☕ Bean Boutique</h2>
+    <div>
+      <a href="#coffee">Coffee</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#events">Events</a>
+      <a href="#offers">Offers</a>
+      <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Warm Coffee. Strong Community.</h1>
+</div>
+
+<!-- SLIDESHOW -->
+<section>
+  <h2>Featured Moments</h2>
+  <div class="slideshow">
+    <img id="slide" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="features ">
+  </div>
+</section>
+
+<!-- COFFEE -->
+<section id="coffee">
+  <h2>Our Coffee Selection</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Colombian single origin">
+      <div class="card-content">
+        <h3>Colombian Single Origin</h3>
+        <p>Chocolate & caramel notes</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571" alt="Expresso Blend">
+      <div class="card-content">
+        <h3>Espresso Blend</h3>
+        <p>Bold & nutty flavour</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section id="equipment">
+  <h2>Brewing Equipment</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="french Press">
+      <div class="card-content">
+        <h3>French Press</h3>
+        <p>Simple & rich brewing</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587731556938-38755b4803a6" alt="expresso Machine">
+      <div class="card-content">
+        <h3>Espresso Machine</h3>
+        <p>Café-quality coffee</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <h2>Events & Workshops</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="coffee testing Night">
+    <div class="card-content">
+      <h3>Coffee Tasting Night</h3>
+      <p>Meet the roasters & sample blends</p>
+      <button>Register</button>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers">
+  <h2>Subscriptions & Offers</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="monthly Subscription">
+      <div class="card-content">
+        <h3>Monthly Subscription</h3>
+        <p>Fresh beans delivered</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Bean Boutique</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="popup">
+  <div class="modal-content">
+    <h3>10% OFF Your First Order ☕</h3>
+    <input type="email" placeholder="Enter your email"><br><br>
+    <button onclick="closeModal()">Get Discount</button>
+  </div>
+</div>
+
+<script>
+  // Slideshow
+  const images = [
+    "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+    "https://images.unsplash.com/photo-1512568400610-62da28bc8a13" 
+  ];
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("slide").src = images[i++ % images.length];
+  }, 3000);
+
+  // Modal
+  if (!localStorage.getItem("visited")) {
+    setTimeout(() => {
+      document.getElementById("popup").style.display = "flex";
+      localStorage.setItem("visited", true);
+    }, 2000);
+  }
+
+  function closeModal() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  // Cart
+  let count = localStorage.getItem("cart") || 0;
+  document.getElementById("cartCount").innerText = count;
+
+  function addToCart() {
+    count++;
+    localStorage.setItem("cart", count);
+    document.getElementById("cartCount").innerText = count;
+  }
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Social Feed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Poppins, sans-serif; text-align:center; padding:40px; background:#fafafa; }
+iframe { border-radius:10px;}
+</style>
+</head>
+<body>
+
+<h2>Our Coffee Community</h2>
+<p>See what our customers are sharing on Instagram</p>
+
+<!-- Instagram embed -->
+<iframe 
+    src="https://www.instagram.com/p/CQK1tM2Fz0p/embed" 
+    width="320" 
+    height="400" 
+    frameborder="0">
+</iframe>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Location</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Poppins, sans-serif; text-align:center; padding:40px; background:#fafafa; }
+iframe { border-radius:10px; width:80%; height:350px; border:0; }
+</style>
+</head>
+<body>
+
+<h2>Visit Our Store</h2>
+<p>Find us easily with this interactive map</p>
+
+<!-- Google Maps embed -->
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631590403!3d-37.81627944202165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f18f4d6d%3A0x5045675218ce7e0!2sMelbourne%20CBD%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1679876543210!5m2!1sen!2sus" 
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Secure Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+body { font-family: Poppins, sans-serif; text-align:center; padding:40px; background:#fafafa; }
+input { padding:10px; width:300px; border-radius:5px; border:1px solid #ccc; }
+button { padding:10px 20px; border:none; border-radius:5px; background:#6d4c41; color:white; cursor:pointer; }
+form { display:inline-block; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h2>Secure Newsletter Signup</h2>
+<p>Your data is protected using reCAPTCHA</p>
+
+<form action="#" method="POST">
+  <input type="email" placeholder="Enter your email" required><br><br>
+  <div class="g-recaptcha" data-sitekey="your_site_key_here"></div><br>
+  <button type="submit">Subscribe</button>
+</form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Offers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:Poppins; margin:0; background:#fafafa; }
+header { background:#3e2723; padding:15px; color:white; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+.card { background:white; border-radius:10px; overflow:hidden; }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card div { padding:15px; }
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<h2 style="text-align:center;">Special Offers</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Monthly Subscription
+">
+    <div>
+      <h3>Monthly Subscription</h3>
+      <p>Fresh beans delivered monthly</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="10% Student Discount">
+    <div>
+      <h3>10% Student Discount</h3>
+      <p>Valid student ID required</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+/* ============================
+   GLOBAL STYLES
+============================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f3ef;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============================
+   HEADER
+============================ */
+
+header {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ============================
+   NAVIGATION BAR
+============================ */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #6f4e37;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3b2f2f;
+}
+
+/* ============================
+   HOME PAGE BOXES
+============================ */
+
+.info {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.info:hover {
+    transform: scale(1.02);
+}
+
+/* ============================
+   SLIDESHOW IMAGE
+============================ */
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================
+   CATALOGUE PRODUCTS
+============================ */
+
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+/* ============================
+   ANIMATED TEXT SEARCH
+============================ */
+
+input[type="text"] {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #6f4e37;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+input[type="text"]:focus {
+    width: 80%;
+    background-color: #fff7f0;
+    outline: none;
+}
+
+/* ============================
+   FORMS
+============================ */
+
+form {
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3b2f2f;
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer {
+    background-color: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ============================
+   MODAL POPUP
+============================ */
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+
+    .info {
+        width: 95%;
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:Poppins; margin:0; background:#fafafa; text-align:center; }
+header { background:#3e2723; padding:15px; color:white; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+section { padding:40px; }
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<section>
+  <h2>Your Shopping Cart</h2>
+  <p>Items will appear here when checkout is enabled.</p>
+</section>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bean Boutique | Coffee</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:Poppins; margin:0; background:#fafafa; }
+header { background:#3e2723; padding:15px; color:white; }
+nav a { color:white; margin:0 10px; text-decoration:none; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+.card { background:white; border-radius:10px; overflow:hidden; box-shadow:0 5px 10px rgba(0,0,0,.1); }
+.card img { width:100%; height:200px; object-fit:cover; }
+.card div { padding:15px; }
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+</header>
+
+<h2 style="text-align:center;">Our Coffee Selection</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="High Quality Beans">
+    <div>
+      <h3>Colombian Single Origin</h3>
+      <p>Chocolate & caramel notes</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571" alt="Expresso Blend">
+    <div>
+      <h3>Espresso Blend</h3>
+      <p>Bold and nutty</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
